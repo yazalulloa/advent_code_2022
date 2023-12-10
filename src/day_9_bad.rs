@@ -1,6 +1,6 @@
 use crate::utils::read_lines;
 
-const debug: bool = false;
+const DEBUG: bool = false;
 
 pub fn run() {
     println!("\nDay 9");
@@ -22,7 +22,7 @@ pub fn run() {
             let number = str[1..].trim().parse::<i32>().expect("parse error");
 
 
-            if debug {
+            if DEBUG {
                 println!("{} {:?} {}", str, direction, number);
             }
 
@@ -50,7 +50,7 @@ pub fn run() {
                 }
 
 
-                if debug {
+                if DEBUG {
                     println!("positions {}", positions.len());
                 }
 
@@ -94,7 +94,7 @@ pub fn run() {
                     }
                 }
 
-                if debug {
+                if DEBUG {
                     print_positions(head_y, head_x, tail_y, tail_x, &positions);
 
                     println!("{}", "=".repeat(20))
@@ -111,7 +111,7 @@ pub fn run() {
 
     println!("PART_1 {}", sum);
 
-    if debug {
+    if DEBUG {
         print_positions(head_y, head_x, tail_y, tail_x, &positions);
     }
 }

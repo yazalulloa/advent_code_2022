@@ -36,7 +36,7 @@ pub fn run() {
     println!("HEAD {:?}\nTAIL {:?}", snake.head, snake.tail);
     println!("PART_1 {}", snake.visited.len());
     println!("PART_2 {}", snake.last_knot_visits.len());
-    println!("{:?}", snake.rope);
+   // println!("{:?}", snake.rope);
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
